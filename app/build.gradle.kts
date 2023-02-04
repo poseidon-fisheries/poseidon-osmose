@@ -25,3 +25,11 @@ dependencies {
 tasks.withType<Test> {
     maxHeapSize = "4G"
 }
+
+tasks.withType<Tar> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType<Zip> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
